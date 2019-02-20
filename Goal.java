@@ -13,8 +13,8 @@ public class Goal
   String name;//name of the Goal
   String description;//description of the goal
 
-  public goal(); //default constructor
-  public goal(int months, String title, String desc)//overloaded constructor
+  public Goal(); //default constructor
+  public Goal(int months, String title, String desc)//overloaded constructor
   {
     months = length;
     name = title;
