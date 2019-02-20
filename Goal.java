@@ -18,16 +18,16 @@ public class Goal
   public int getLength()//returns length of goal to main
   { return length; }
 
-  public void setName(String title)
+  public void setName(String title)//sets name of goal
   { name = title; }
 
-  public String getName()
+  public String getName()//returns name of goal to main
   { return name; }
 
-  public void setDescription(String desc)
+  public void setDescription(String desc)//sets description of goal
   { desc = description }
 
-  public String getDescription()
+  public String getDescription()//returns description of goal to main
   { return description; }
-
+  
 }
