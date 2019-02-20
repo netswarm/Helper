@@ -8,9 +8,18 @@ import java.util.*;
 
 public class Goal
 {
+
   int length;//length of the goal set in months
   String name;//name of the Goal
   String description;//description of the goal
+
+  public goal(); //default constructor
+  public goal(int months, String title, String desc)//overloaded constructor
+  {
+    months = length;
+    name = title;
+    description = desc;
+  }
 
   public void setLength(int months)//sets length of goal
   { months = length; }
@@ -29,5 +38,5 @@ public class Goal
 
   public String getDescription()//returns description of goal to main
   { return description; }
-  
+
 }
