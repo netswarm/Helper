@@ -13,9 +13,10 @@ public class Goal
   String name;//name of the Goal
   String description;//description of the goal
 
-  public Goal(int months, String title, String desc)//overloaded constructor
+  public Goal(){}//default constructor for Goal class
+  public Goal(int months, String title, String desc)//overloaded constructor for Goal class
   {
-    months = length;
+    length = months;
     name = title;
     description = desc;
   }
@@ -33,7 +34,7 @@ public class Goal
   { return name; }
 
   public void setDescription(String desc)//sets description of goal
-  { desc = description }
+  { desc = description; }
 
   public String getDescription()//returns description of goal to main
   { return description; }
