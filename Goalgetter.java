@@ -22,17 +22,17 @@ public class Goalgetter{
         System.out.println("Write a short description of this goal");
         description = k.nextLine();
 
+        Goal project = new Goal(title, timeframe, description);
+        better.add(project);
+
         System.out.println("Would you like to add another goal?");
-        ans = k.next().charAt(0);
+        ans = k.nextLine().charAt(0);
       }
       while (ans == 'y');
-    /**if (ans == 'y')
+    if (ans == 'n')
     {
-      Goal project = new Goal(3,"lose weight","lose weight in 3 months");
-      better.add(project);
       better.get(0).displayGoal();
     }
-    */
   }
 
 }
