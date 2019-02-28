@@ -9,22 +9,22 @@ import java.util.*;
 public class Goal
 {
 
-  int length;//length of the goal set in months
+  String length;//length of the goal set in months
   String name;//name of the Goal
   String description;//description of the goal
 
   public Goal(){}//default constructor for Goal class
-  public Goal(int months, String title, String desc)//overloaded constructor for Goal class
+  public Goal(String months, String title, String desc)//overloaded constructor for Goal class
   {
     length = months;
     name = title;
     description = desc;
   }
 
-  public void setLength(int months)//sets length of goal
+  public void setLength(String months)//sets length of goal
   { months = length; }
 
-  public int getLength()//returns length of goal to main
+  public String getLength()//returns length of goal to main
   { return length; }
 
   public void setName(String title)//sets name of goal
@@ -39,4 +39,10 @@ public class Goal
   public String getDescription()//returns description of goal to main
   { return description; }
 
+  public void displayGoal()//displays data about Goal
+  {
+    System.out.println(length);
+    System.out.println(name);
+    System.out.println(description);
+  }
 }
