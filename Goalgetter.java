@@ -4,8 +4,24 @@ public class Goalgetter{
   public static void main(String[] args)
   {
     int ans = menu();
-    ArrayList<Goal> newer = addGoals();
-    printGoals(newer);
+    ArrayList<Goal> newer = new ArrayList<Goal>();
+    do{
+        if (ans == 1)
+        {
+          newer = addGoals();
+          ans = menu();
+        }
+
+        else if (ans == 2)
+        {
+          printGoals(newer);
+          ans = menu();
+        }
+
+        else if (ans == 4)
+        { System.exit(0); }
+      }
+    while(ans != 4);
   }
 
   public static int menu()//menu class to help with navigation of program in cli
