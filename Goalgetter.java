@@ -8,9 +8,14 @@ public class Goalgetter{
         if (ans = 1)
         { addGoals(); }
 
-        if (ans = 2)
+        else if (ans = 2)
         { printGoals(); }
-      } 
+
+        else if (ans = 4)
+        { System.exit(0);}
+        else
+        {menu()}
+      }
   }
 
   public static int menu()//menu class to help with navigation of program in cli
@@ -19,7 +24,7 @@ public class Goalgetter{
     Scanner in = new Scanner(System.in);
 
     System.out.println("\nWhat would you like to do today?\n" + " 1. Create Goal\n"
-    + " 2. review goals\n" + " 3. review tasks\n");
+    + " 2. review goals\n" + " 3. review tasks\n" + "4. quit\n");
 
     ans = in.nextInt();
     return ans;
