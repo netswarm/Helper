@@ -3,20 +3,9 @@ import java.util.*;
 public class Goalgetter{
   public static void main(String[] args)
   {
-    do{
-        int ans = menu();
-        if (ans = 1)
-        { addGoals(); }
-
-        else if (ans = 2)
-        { printGoals(); }
-
-        else if (ans = 4)
-        { System.exit(0);}
-        else
-        {menu()}
-      }
-    while (ans != 4)
+    int ans = menu();
+    ArrayList<Goal> newer = addGoals();
+    printGoals(newer);
   }
 
   public static int menu()//menu class to help with navigation of program in cli
@@ -31,7 +20,7 @@ public class Goalgetter{
     return ans;
   }
 
-  public static void addGoals()// adds goals to ArrayList for review and modification
+  public static ArrayList<Goal> addGoals()// adds goals to ArrayList for review and modification
   {
     String title;
     String timeframe;
@@ -59,17 +48,18 @@ public class Goalgetter{
         ans = k.nextLine().charAt(0);
       }
       while (ans == 'y');
+      return better;
   }
 
-  public static void printGoals(ArrayList copy)//prints out lists of goals for user
+  public static void printGoals(ArrayList<Goal> copy)//prints out lists of goals for user
   {
-    int count = 0
+    int count = 0;
     int length = copy.size();
 
     while (count < length)
     {
-      copy[int].displayGoal();
-      int++;
+      copy.get(count).displayGoal();
+      count++;
     }
   }
 }
