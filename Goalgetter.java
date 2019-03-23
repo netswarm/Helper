@@ -16,6 +16,7 @@ public class Goalgetter{
         else
         {menu()}
       }
+    while (ans != 4)
   }
 
   public static int menu()//menu class to help with navigation of program in cli
