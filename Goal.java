@@ -12,9 +12,10 @@ public class Goal
   String length;//length of the goal set in months
   String name;//name of the Goal
   String description;//description of the goal
+  String cat;// category of the goal
 
   public Goal(){}//default constructor for Goal class
-  public Goal(String months, String title, String desc)//overloaded constructor for Goal class
+  public Goal(String Topic, String months, String title, String desc)//overloaded constructor for Goal class
   {
     length = months;
     name = title;
@@ -38,6 +39,12 @@ public class Goal
 
   public String getDescription()//returns description of goal to main
   { return description; }
+
+  public void setCat(String category)//sets the category for the goal
+  { cat = category;  }
+
+  public String getCat()//retrieves category that was set to goal
+  { return cat; }
 
   public void displayGoal()//displays data about Goal
   {
